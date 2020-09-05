@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #f3f3fb;
+}
+.box-1 {
+  width: 80vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  border: 1px solid #f3f3fb;
+  box-sizing: border-box;
+}
+
+.box-1 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.box-1 .link {
+  text-decoration: none;
+  color: #154360;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.addmessage {
+  background-color: #ffffff;
+  width: 90%;
+  height: 20vh;
+  margin-left: 5%;
+  margin-top: 0px;
+  border-radius: 5px;
+  border: 1px solid #f3f3fb;
+  box-sizing: border-box;
+}
+.medialine {
+  display: flex;
+  width: 95%;
+  background-color: #ffffff;
+  margin-top: 11.5%;
+  margin-left: 5px;
+}
+
+.medialine > .form-control {
+  width: 90%;
+}
+
+#basic-addon {
+  height: 43px;
+}
+
+@media only screen and (max-width: 968px) {
+  .addmessage {
+    background-color: white;
+    margin-top: 0px;
+  }
+  .medialine {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .addmessage {
+    background-color: white;
+    margin-top: 30px;
+    width: 92.5%;
+  }
+  .medialine {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .addmessage {
+    background-color: white;
+    margin-top: 70%;
+    width: 90%;
+  }
+  .medialine {
+    margin-top: 8%;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkBlue: #154360;
+  --lightGray: #ecf0f1;
+  --mainWhite: #fff;
+}
+
+.flex-display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-div {
+  width: 100%;
+}
+.landingLeft {
+  background-color: #ecf0f1;
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12.5%;
+  font-size: 80px;
+  float: left;
+}
+.landingRight {
+  background-color: #ffffff;
+  height: 100vh;
+  box-sizing: border-box;
+  float: left;
+}
+
+.form-div {
+  width: 60%;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #154360;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+  border: 3px solid #ecf0f1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+.below-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.below-input a {
+  text-decoration: none;
+  color: #e74c3c;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.login {
+  width: 100%;
+  height: 40px;
+  background-color: #154360;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.below-input-right {
+  color: #b3b6b7;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/* .register-form{
+  
+  } */
+button:hover {
+  opacity: 0.9;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d0d3d4;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #d0d3d4;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #d0d3d4;
+}
+
+.dontHaveAccount {
+  margin-top: 5%;
+  /* margin-left: 33%; */
+  font-family: "Roboto", sans-serif;
+  color: #154360;
+  text-align: center;
+}
+
+.dontHaveAccount a {
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+.logo {
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+.google-signIn {
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+}
+
+@media (max-width: 572px) {
+  .landingLeft {
+    display: none;
+  }
+  .landingRight {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 572px) {
+  .landingLeft {
+    width: 50vw;
+  }
+  .landingRight {
+    width: 50vw;
+  }
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.homepageLeft {
+  width: 20vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #154360;
+}
+
+.homepageLeft .logo {
+  margin-left: 15%;
+  margin-top: 15%;
+  display: flex;
+}
+
+.homepageLeft .logo .postit {
+  font-weight: bold;
+  font-size: 35px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.homepageLeft .create-channel {
+  display: flex;
+  margin-left: 15%;
+}
+
+.homepageLeft .create-channel .create {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.homepageLeft .create-channel .add {
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 50px;
+  border: 2px;
+  color: #fff;
+}
+
+.homepageLeft .group {
+  margin-left: 15%;
+  margin-top: 15px;
+}
+
+.homepageLeft .group .groups {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.homepageLeft .group .groups:hover {
+  color: #fc7037;
+}
+.homepageLeft .group .one {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fc7037;
+}
+.Nnamdi {
+  width: 80vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .homepageLeft .logo .postit {
+    font-size: 20px;
+  }
+  .homepageLeft .group {
+    margin-left: 20px;
+  }
+  .homepageLeft .create-channel {
+    margin-left: 20px;
+  }
+  .homepageLeft .group .groups {
+    font-size: 15px;
+  }
+  .homepageLeft .group .one {
+    font-size: 15px;
+  }
+  .homepageLeft .create-channel .create {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .homepageLeft .logo .postit {
+    font-size: 15px;
+  }
+}
+
+/* Create channel start */
+.col-75 input[type="text"] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #f4f6f7;
+}
+
+input[type="submit"] {
+  background-color: #154360;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right {
+  width: 100%;
+}
+
+.right > input[type="submit"] {
+  margin-left: 51%;
+}
+
+.lnk {
+  position: relative;
+  left: 50%;
+  text-decoration: none;
+}
+
+.lnk:hover {
+  text-decoration: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #3f88b6;
+}
+
+.container-form {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.container-form > h1 {
+  color: #154360;
+  margin-left: 35%;
+}
+
+.col-75 {
+  float: center;
+  width: 100%;
+  margin-top: 6px;
+  margin-left: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+Link {
+  float: right;
+}
+
+.add {
+  font-size: 30px;
+}
+
+.compo-1 {
+  width: 85%;
+  height: 60vh;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(250, 250, 250);
+  overflow-y: scroll;
+}
+
+.post {
+  display: block;
+  background-color: #f3f3ff;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.post p {
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+/* .message {
+  margin-left: 40px;
+} */
+/* .sub-compo > p {
+  font-size: 15px;
+} */
+
+/* .post > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+} */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .right > input[type="submit"] {
+    margin-left: 0;
+  }
+
+  .container-form {
+    margin-left: 0;
+  }
+
+  .container-form > h1 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .lnk {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .compo-1 {
+    width: 90%;
+    margin-left: 130px;
+  }
+
+  .addmessage {
+    margin-top: 120px;
+  }
+
+  .medialine {
+    margin-top: 68px;
+  }
+}
+
+/* Add People modal */
+.searchAreaDiv {
+  position: fixed;
+  width: 40%;
+  margin: auto;
+  border-radius: 10px;
+  border: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--lightGray);
+}
+
+.searchAreaDiv h1 {
+  text-align: center;
+  color: var(--darkBlue);
+}
+#searchArea {
+  width: 70%;
+  margin-left: 5%;
+}
